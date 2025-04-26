@@ -106,36 +106,36 @@
 
 <div class="shop-container" id="shop">
   <div class="product">
-    <a href="#" onclick="checkout('Product 1', '100000')">
+    <a href="#" onclick="checkout('Product 1', '1')">
       <img src="https://cdn.pterodactyl.io/logos/new/pterodactyl_logo_transparent.png" alt="Panel Ram Unlimited" />
       <h3>Panel Ram Unlimited</h3>
       <p>$ 1.00</p>
     </a>
-    <button onclick="checkout('Panel Ram Unlimited', '10000')">Pay</button>
+    <button onclick="checkout('Panel Ram Unlimited', '1')">Pay</button>
   </div>
   <div class="product">
-    <a href="#" onclick="checkout('Silencer V3', '7000')">
+    <a href="#" onclick="checkout('Silencer V3', '1')">
       <img src="https://img1.pixhost.to/images/5309/592540916_skyzopedia.jpg" alt="Silencer V3" />
       <h3>Silencer V3</h3>
       <p>$ 5.0</p>
     </a>
-    <button onclick="checkout('Silencer V3', '7000')">Buy</button>
+    <button onclick="checkout('Silencer V3', '5')">Buy</button>
   </div>
   <div class="product">
-    <a href="#" onclick="checkout('Bug Service', '6000')">
+    <a href="#" onclick="checkout('Bug Service', '1')">
       <img src="https://img1.pixhost.to/images/5309/592540696_skyzopedia.jpg" alt="Bug Service" />
       <h3>Bug Service</h3>
       <p>$ 1.0/</p>
     </a>
-    <button onclick="checkout('Bug Service', '6000')">Buy</button>
+    <button onclick="checkout('Bug Service', '1')">Buy</button>
   </div>
   <div class="product">
-    <a href="#" onclick="checkout('Fix Script Error', '5000')">
+    <a href="#" onclick="checkout('Fix Script Error', '2')">
       <img src="https://img1.pixhost.to/images/5309/592540696_skyzopedia.jpg" alt="Fix Script Error" />
       <h3>Fix Script Error</h3>
       <p>$ 2.0</p>
     </a>
-    <button onclick="checkout('Reseller Panel Private', '15000')">Buy</button>
+    <button onclick="checkout('New crash function', '5')">Buy</button>
   </div>
   <div class="product">
     <a href="#" onclick="checkout('New Crash Function', '5')">
@@ -143,7 +143,7 @@
       <h3>New Crash Function</h3>
       <p>$ 5.00</p>
     </a>
-    <button onclick="checkout('Product 5', '15000')">Buy</button>
+    <button onclick="checkout('Product 5', '5')">Buy</button>
   </div>
   <div class="product">
     <a href="#" onclick="checkout('Reseller Script', '10')">
@@ -168,7 +168,7 @@
   function checkout(product, price) {
     document.getElementById('shop').style.display = 'none';
     document.getElementById('checkout').style.display = 'block';
-    document.getElementById('selected-product').innerText = `Produk: ${product}`;
+    document.getElementById('selected-product').innerText = `Product: ${product}`;
     document.getElementById('product-price').innerText = `Price: Dollar ${price}`;
     selectedProduct = product;
     productPrice = price;
