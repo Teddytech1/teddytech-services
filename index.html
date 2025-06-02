@@ -117,17 +117,17 @@
     <a href="#" onclick="checkout('Silencer V3', '1')">
       <img src="https://files.catbox.moe/yx9w43.jpg" alt="SPIDER XI" />
       <h3>SPIDER XI</h3>
-      <p>$ 5.0</p>
+      <p>200/-</p>
     </a>
-    <button onclick="checkout('SPIDER XI', '5')">Buy</button>
+    <button onclick="checkout('SPIDER XI', '200')">Buy</button>
   </div>
   <div class="product">
     <a href="#" onclick="checkout('Bug Service', '1')">
       <img src="https://files.catbox.moe/yx9w43.jpg" alt="Bug Service" />
       <h3>Bug Service</h3>
-      <p>100/</p>
+      <p>20/-</p>
     </a>
-    <button onclick="checkout('Bug Service', '1')">Buy</button>
+    <button onclick="checkout('Bug Service', '20')">Buy</button>
   </div>
   <div class="product">
     <a href="#" onclick="checkout('Fix Script Error', '2')">
@@ -135,7 +135,7 @@
       <h3>Fix Script Error</h3>
       <p>200</p>
     </a>
-    <button onclick="checkout('New crash function', '5')">Buy</button>
+    <button onclick="checkout('New crash function', '200')">Buy</button>
   </div>
   <div class="product">
     <a href="#" onclick="checkout('New Crash Function', '5')">
@@ -148,10 +148,10 @@
   <div class="product">
     <a href="#" onclick="checkout('Reseller Script', '10')">
       <img src="https://files.catbox.moe/yx9w43.jpg" alt="Reseller Script" />
-      <h3>Reseller Script</h3>
-      <p>$ 10.0</p>
+      <h3>NORMAL BOT</h3>
+      <p>70/-</p>
     </a>
-    <button onclick="checkout('Reseller Script', '10')">Buy</button>
+    <button onclick="checkout('Normal bot', '70/-')">Buy</button>
   </div>
 </div>
 
@@ -175,7 +175,7 @@
   }
 
   function pay() {
-    const message = `Halo, i want to buy${selectedProduct} at dollar ${productPrice}.`;
+    const message = `Hello Teddy, i want to buy${selectedProduct} at dollar ${productPrice}.`;
     const url = `https://wa.me/254799963583?text=${encodeURIComponent(message)}`;
     window.location.href = url;
   }
