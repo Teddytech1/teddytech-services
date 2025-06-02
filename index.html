@@ -175,7 +175,7 @@
   }
 
   function pay() {
-    const message = `Hello Teddy, i want to buy${selectedProduct} at Ksh{productPrice}.`;
+    const message = `Hello Teddy, i want to buy${selectedProduct} at Ksh ${productPrice}.`;
     const url = `https://wa.me/254799963583?text=${encodeURIComponent(message)}`;
     window.location.href = url;
   }
