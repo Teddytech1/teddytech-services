@@ -169,13 +169,13 @@
     document.getElementById('shop').style.display = 'none';
     document.getElementById('checkout').style.display = 'block';
     document.getElementById('selected-product').innerText = `Product: ${product}`;
-    document.getElementById('product-price').innerText = `Price: Dollar ${price}`;
+    document.getElementById('product-price').innerText = `Price: KSH ${price}`;
     selectedProduct = product;
     productPrice = price;
   }
 
   function pay() {
-    const message = `Hello Teddy, i want to buy${selectedProduct} at dollar ${productPrice}.`;
+    const message = `Hello Teddy, i want to buy${selectedProduct} at Ksh{productPrice}.`;
     const url = `https://wa.me/254799963583?text=${encodeURIComponent(message)}`;
     window.location.href = url;
   }
